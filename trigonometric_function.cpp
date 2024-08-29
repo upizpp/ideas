@@ -1,5 +1,6 @@
 // upizpp 2024/4/20
 #include <cstdint>
+#include <cstring>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -14,6 +15,7 @@ int_t k = 1;
 
 void print(const char *func, int_t pow) {
     if (pow == 0) {
+        std::strcmp(func, "tan") == 0 && cout << 1;
         return;
     }
     cout << func;
